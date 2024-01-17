@@ -9,10 +9,10 @@ public class Main {
         System.out.println(stephenieMeyer.getFirstName() + " " + stephenieMeyer.getLastName());
 
         Book bookOne = new Book("Garry Potter", kathleenRowling, 1997);
-        System.out.println(bookOne.getNameBook() + ", " + bookOne.getNameAuthor() + ", " + bookOne.getYearPublishing());
+        System.out.println(bookOne.getTitle() + ", " + bookOne.getNameAuthor().getFirstName() + ", " + bookOne.getYearPublishing());
 
         Book bookTwo = new Book("Twilight", stephenieMeyer, 2005);
-        System.out.println(bookTwo.getNameBook() + ", " + bookTwo.getNameAuthor() + ", " + bookTwo.getYearPublishing());
+        System.out.println(bookTwo.getTitle() + ", " + bookTwo.getNameAuthor().getFirstName() + ", " + bookTwo.getYearPublishing());
 
         bookOne.setYearPublishing(1998);
         System.out.println(bookOne.getYearPublishing());
