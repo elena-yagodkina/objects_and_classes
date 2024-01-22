@@ -19,12 +19,12 @@ public class Author {
             return false;
         }
         Author author = (Author) other;
-        return Objects.equals(firstName, author.firstName);
+        return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(firstName);
+        return java.util.Objects.hash(firstName, lastName);
     }
 
     public String getFirstName() {
